@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home"
+    android:paddingHorizontal="@dimen/dimen20"
+    android:paddingVertical="@dimen/dimen10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOnlineOffline"
+            style="@style/poppins_bold_700_16sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are_offline"
+            android:textColor="@color/textBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/poppins_regular_400_16sp_dark_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_online_to_start_accepting_jobs"
+            android:textColor="@color/textLightBlack"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchOnlineOffline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:thumb="@drawable/thumb_selector"
+        app:track="@drawable/track_selector"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</RelativeLayout>

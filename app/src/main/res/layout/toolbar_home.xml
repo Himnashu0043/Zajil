@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:paddingHorizontal="@dimen/dimen12"
+    android:paddingVertical="@dimen/dimen12">
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen8"
+        android:src="@drawable/hamburger_white" />
+
+    <LinearLayout
+        android:id="@+id/llLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/llEnd"
+        android:layout_toEndOf="@id/ivMenu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen6"
+            android:src="@drawable/location_pin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen6"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/travel_and_tours"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/poppins_regular_400_10sp_light_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/king_fahd_road_abha_saudi_arabia" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCenter"
+        style="@style/poppins_bold_700_24sp_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dimen12"
+        android:layout_toEndOf="@id/ivMenu"
+        android:gravity="center_vertical"
+        android:text="@string/new_requests"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/notification_selector" />
+
+        <ImageView
+            android:id="@+id/ivLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/epsilon_selector" />
+
+        <!--<ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/profile_selector" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

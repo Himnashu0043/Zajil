@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="poppins_bold_700_24sp_white">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="poppins_bold_700_22sp_white">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="poppins_bold_700_20sp_black">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="poppins_bold_700_18sp_primary">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="poppins_bold_700_16sp_white">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="poppins_bold_700_14sp_white">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="inter_bold_700_12sp_white">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="inter_medium_12sp_white">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="poppins_semibold_600_24sp_primary">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="poppins_semibold_600_14sp_dark_grey">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="poppins_medium_500_18sp_textBlack">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="poppins_medium_500_16sp_primary">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="poppins_medium_500_14sp_textBlack">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="poppins_medium_500_12sp_textBlack">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <style name="poppins_regular_400_16sp_dark_grey">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="poppins_regular_400_14sp_dark_grey">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="poppins_regular_400_12sp_dark_grey">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="poppins_regular_400_10sp_light_grey">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+
+
+    //////////////////////////////////////////////////////
+
+    <style name="sans_12sp_primary">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="poppins_30sp_black">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sans_24sp_primary">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="sans_16sp_grey">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="poppins_12sp_grey">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="sans_14sp_grey">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="sans_16sp_primary">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="poppins_18sp_black">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="poppins_20sp_black">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="dialog_style" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

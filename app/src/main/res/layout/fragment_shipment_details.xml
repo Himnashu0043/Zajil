@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llBottom"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen20">
+
+            <TextView
+                style="@style/poppins_semibold_600_24sp_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Shipment Details" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="-8dp"
+                android:src="@drawable/vehicle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:elevation="1dp"
+                    android:src="@drawable/shipment_complete" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    app:trackCornerRadius="4dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:elevation="1dp"
+                    android:src="@drawable/shipment_incomplete" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginVertical="20dp"
+                app:cardCornerRadius="@dimen/dimen16">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="226dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/rideDetail"
+                layout="@layout/item_shipping_location_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20" />
+
+
+            <TextView
+                style="@style/sans_14sp_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen16"
+                android:text="Package Details"
+                android:textColor="@color/textBlack" />
+
+
+            <include
+                android:id="@+id/packageDetail"
+                layout="@layout/item_package_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen16" />
+
+            <include
+                android:id="@+id/receiverDetails"
+                layout="@layout/item_receiver_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen24" />
+
+            <TextView
+                style="@style/sans_14sp_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen16"
+                android:text="Payment Mode"
+                android:textColor="@color/textBlack" />
+
+
+            <include
+                layout="@layout/item_payment_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen16" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNavigate"
+                style="@style/sans_16sp_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen24"
+                android:background="@drawable/solid_primary_25"
+                android:backgroundTint="@color/yellow"
+                android:text="Navigate"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:id="@+id/llUpdateSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen24"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLabel"
+                        style="@style/poppins_medium_500_14sp_textBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen20"
+                        android:layout_marginBottom="-10dp"
+                        android:background="@color/white"
+                        android:elevation="0.1dp"
+                        android:paddingHorizontal="8dp"
+                        android:text="Updated Status"
+                        android:textColor="@color/textBlack" />
+
+                    <TextView
+                        android:id="@+id/etEditText"
+                        style="@style/sans_16sp_primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableEnd="@drawable/drop_down"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:minHeight="44dp"
+                        android:padding="@dimen/dimen10"
+                        android:text="Pick Up Completed" />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdate"
+                    style="@style/sans_16sp_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/solid_primary_25"
+                    android:backgroundTint="@color/yellow"
+
+                    android:paddingHorizontal="25dp"
+                    android:text="Update"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShipingActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dimen20"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_ride_status" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen20"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/negative_button"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/positive_button"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

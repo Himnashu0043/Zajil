@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".fragments.PhoneVerificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.SignInFragment">
+
+        <include
+            android:id="@+id/includedToolbar"
+            layout="@layout/toolbar_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen12"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/includedToolbar" />
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            style="@style/poppins_semibold_600_24sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen50"
+            android:gravity="center"
+            android:text="@string/phone_verification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/poppins_regular_400_14sp_dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen48"
+            android:layout_marginTop="@dimen/dimen16"
+            android:gravity="center"
+            android:text="@string/phone_check_your_message_for_four_digit_security_code_and_enter_it_below"
+            app:layout_constraintEnd_toEndOf="@+id/tvSignIn"
+            app:layout_constraintStart_toStartOf="@+id/tvSignIn"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignIn" />
+
+        <ImageView
+            android:id="@+id/ivSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen30"
+            android:src="@drawable/ic_tick"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/etEnterOtp"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen30"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@drawable/edit_text_background"
+            android:padding="@dimen/dimen4"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cursorWidth="2dp"
+            app:flow_horizontalAlign="center"
+            app:flow_verticalAlign="center"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="@dimen/dimen44"
+            app:itemRadius="@dimen/dimen4"
+            app:itemSpacing="@dimen/dimen12"
+            app:itemWidth="@dimen/dimen44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivSuccess"
+            app:lineColor="@android:color/transparent"
+            app:lineWidth="0dp"
+            app:viewType="rectangle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            style="@style/poppins_bold_700_14sp_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen40"
+            android:background="@drawable/solid_primary_25"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEnterOtp" />
+
+        <TextView
+            android:id="@+id/tvDontAccount"
+            style="@style/poppins_regular_400_16sp_dark_grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20"
+            android:gravity="center"
+            android:text="@string/didn_t_get_a_code_send_again"
+            app:layout_constraintEnd_toEndOf="@+id/btnSubmit"
+            app:layout_constraintStart_toStartOf="@+id/btnSubmit"
+            app:layout_constraintTop_toBottomOf="@id/btnSubmit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginStart="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen50"
+        android:src="@drawable/place_holde_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/poppins_bold_700_16sp_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen18"
+        android:text="@string/zeeshan_khan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toTopOf="@id/ivProfile" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        style="@style/poppins_regular_400_12sp_dark_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen18"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen4"
+        android:drawablePadding="@dimen/dimen8"
+        android:drawableTint="@color/white"
+        android:text="@string/_9665999999999"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/call"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen70"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone">
+
+        <TextView
+            android:id="@+id/tvAboutUs"
+            style="@style/poppins_medium_500_16sp_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_effect_no_radius"
+            android:drawablePadding="@dimen/dimen12"
+            android:padding="@dimen/dimen20"
+            android:text="@string/about_us"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/about_us" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/tvHelpSupport"
+            style="@style/poppins_medium_500_16sp_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen12"
+            android:padding="@dimen/dimen20"
+            android:text="@string/help_amp_support"
+            android:background="@drawable/click_effect_no_radius"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/help_support" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey" />
+
+        <!--<TextView
+            android:id="@+id/tvContactUs"
+            style="@style/poppins_medium_500_16sp_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/contact_us"
+            android:drawablePadding="@dimen/dimen12"
+            android:padding="@dimen/dimen20"
+            android:text="@string/contact_us"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey" />-->
+
+        <TextView
+            android:id="@+id/tvPrivacyPolicy"
+            style="@style/poppins_medium_500_16sp_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen12"
+            android:padding="@dimen/dimen20"
+            android:text="@string/privacy_policy"
+            android:background="@drawable/click_effect_no_radius"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/privacy_policy" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            style="@style/poppins_medium_500_16sp_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen12"
+            android:padding="@dimen/dimen20"
+            android:background="@drawable/click_effect_no_radius"
+            android:text="@string/terms_amp_conditions"
+            android:foreground="?attr/selectableItemBackground"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/about_us" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSettings"
+        style="@style/poppins_medium_500_16sp_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen46"
+        android:background="@drawable/stroke_white_25"
+        android:drawablePadding="@dimen/dimen12"
+        android:paddingHorizontal="@dimen/dimen40"
+        android:paddingVertical="@dimen/dimen12"
+        android:text="@string/settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

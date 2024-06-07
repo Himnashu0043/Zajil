@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.AboutUsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            style="@style/poppins_semibold_600_24sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            android:text="@string/about_us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHeading1"
+            style="@style/poppins_bold_700_18sp_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen30"
+            android:text="@string/about_zajil"
+            android:textColor="@color/textBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignIn" />
+
+        <TextView
+            android:id="@+id/tvDescription1"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8"
+            android:text="@string/lorem_ipsum_dolor_sit_amet"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="@+id/tvHeading1"
+            app:layout_constraintStart_toStartOf="@+id/tvHeading1"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading1" />
+
+        <TextView
+            android:id="@+id/tvHeading2"
+            style="@style/poppins_bold_700_18sp_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            android:text="@string/about_drivers"
+            android:textColor="@color/textBlack"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescription1"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription1"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription1" />
+
+        <TextView
+            android:id="@+id/tvDescription2"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8"
+            android:text="@string/lorem_ipsum_dolor_sit_amet"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="@+id/tvHeading2"
+            app:layout_constraintStart_toStartOf="@+id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading2" />
+
+        <TextView
+            android:id="@+id/tvHeading3"
+            style="@style/poppins_bold_700_18sp_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            android:text="@string/about_zajil"
+            android:textColor="@color/textBlack"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescription2"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription2"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription2" />
+
+        <TextView
+            android:id="@+id/tvDescription3"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8"
+            android:text="@string/lorem_ipsum_dolor_sit_amet"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="@+id/tvHeading3"
+            app:layout_constraintStart_toStartOf="@+id/tvHeading3"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

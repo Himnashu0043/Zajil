@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "770721219162",
+    "project_id": "production-zajil-app-v2",
+    "storage_bucket": "production-zajil-app-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770721219162:android:08122a32b33cb5b6c1ce63",
+        "android_client_info": {
+          "package_name": "com.example.zajil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770721219162-u6ds7r4uu2qu1pt23da20o1mrm54j2ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwrPDh_L1vJjfnuSAKyQphY3vCP7N7vrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770721219162-u6ds7r4uu2qu1pt23da20o1mrm54j2ms.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "770721219162-j9hibsh2ib4sp5vfv9octiobj0dq3342.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ffke.zajil",
+                "app_store_id": "862710369"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770721219162:android:af70b24e778ac912c1ce63",
+        "android_client_info": {
+          "package_name": "com.org.zajil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770721219162-u6ds7r4uu2qu1pt23da20o1mrm54j2ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwrPDh_L1vJjfnuSAKyQphY3vCP7N7vrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770721219162-u6ds7r4uu2qu1pt23da20o1mrm54j2ms.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "770721219162-j9hibsh2ib4sp5vfv9octiobj0dq3342.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ffke.zajil",
+                "app_store_id": "862710369"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

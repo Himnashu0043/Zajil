@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen12"
+    android:paddingVertical="@dimen/dimen16">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen8"
+        android:src="@drawable/hamburger_primary" />
+
+    <TextView
+        android:id="@+id/tvCenter"
+        style="@style/poppins_bold_700_24sp_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/my_order"
+        android:textColor="@color/primary" />
+
+    <LinearLayout
+        android:id="@+id/llEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/notification_black" />
+
+        <ImageView
+            android:id="@+id/ivEpsilon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen8"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/epsilon_black" />
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen8"
+            android:src="@drawable/profile_black" />
+    </LinearLayout>
+
+
+</RelativeLayout>

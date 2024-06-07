@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimen20"
+    android:background="@drawable/solid_white_22"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="@dimen/dimen14"
+    android:paddingHorizontal="@dimen/dimen20"
+    android:paddingVertical="@dimen/dimen20">
+
+    <TextView
+        android:id="@+id/tvReasons"
+        style="@style/poppins_bold_700_20sp_black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reason_for_reject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvReasons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="@+id/tvReasons"
+        app:layout_constraintStart_toStartOf="@+id/tvReasons"
+        app:layout_constraintTop_toBottomOf="@id/tvReasons"
+        tools:listitem="@layout/item_rejected_reasons" />
+
+    <LinearLayout
+        android:id="@+id/llEnterReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/rvReasons">
+
+        <TextView
+            style="@style/poppins_medium_500_14sp_textBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_marginBottom="-10dp"
+            android:background="@color/white"
+            android:elevation="0.1dp"
+            android:paddingHorizontal="@dimen/dimen8"
+            android:text="Write reason" />
+
+        <EditText
+            android:id="@+id/etNewPassword"
+            style="@style/poppins_medium_500_14sp_textBlack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|top"
+            android:hint="Write reason"
+            android:padding="@dimen/dimen10"
+            android:textColor="@color/primary"
+            android:textColorHint="@color/hint" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvCancel"
+        style="@style/poppins_semibold_600_14sp_dark_grey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginEnd="@dimen/dimen10"
+        android:background="@drawable/stroke_grey_50"
+        android:paddingHorizontal="@dimen/dimen40"
+        android:paddingVertical="@dimen/dimen10"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toStartOf="@id/tvSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llEnterReason" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvSubmit"
+        style="@style/poppins_semibold_600_14sp_dark_grey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen10"
+        android:background="@drawable/solid_yellow_50"
+        android:paddingHorizontal="@dimen/dimen40"
+        android:paddingVertical="@dimen/dimen10"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@id/tvCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCancel"
+        app:layout_constraintTop_toTopOf="@+id/tvCancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

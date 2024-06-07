@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            style="@style/poppins_semibold_600_24sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            android:text="@string/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPushNotifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen30"
+            android:background="@drawable/solid_white_16"
+            android:elevation="@dimen/dimen8"
+            android:paddingHorizontal="@dimen/dimen18"
+            android:paddingVertical="@dimen/dimen16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignIn">
+
+            <TextView
+                android:id="@+id/tvHeading1"
+                style="@style/poppins_medium_500_18sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/yellow_notify"
+                android:drawablePadding="@dimen/dimen16"
+                android:text="@string/push_notifications"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchPushEnable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:thumb="@drawable/thumb_setting_enable_push"
+                app:track="@drawable/track_green"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen24"
+            android:background="@drawable/solid_white_16"
+            android:elevation="@dimen/dimen8"
+            android:padding="@dimen/dimen18"
+            app:layout_constraintEnd_toEndOf="@+id/clPushNotifications"
+            app:layout_constraintStart_toStartOf="@+id/clPushNotifications"
+            app:layout_constraintTop_toBottomOf="@+id/clPushNotifications">
+
+            <TextView
+                android:id="@+id/tvHeading2"
+                style="@style/poppins_medium_500_18sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/language"
+                android:drawablePadding="@dimen/dimen16"
+                android:text="@string/language"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/poppins_medium_500_12sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/arrow_next"
+                android:drawablePadding="@dimen/dimen16"
+                android:gravity="center"
+                android:text="@string/english"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clChangePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen24"
+            android:background="@drawable/solid_white_16"
+            android:elevation="@dimen/dimen8"
+            android:padding="@dimen/dimen18"
+            app:layout_constraintEnd_toEndOf="@+id/clLanguage"
+            app:layout_constraintStart_toStartOf="@+id/clLanguage"
+            app:layout_constraintTop_toBottomOf="@+id/clLanguage">
+
+            <TextView
+                android:id="@+id/tvHeading3"
+                style="@style/poppins_medium_500_18sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/change_password"
+                android:drawablePadding="@dimen/dimen16"
+                android:text="@string/change_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                style="@style/poppins_12sp_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen16"
+                android:gravity="center"
+                android:src="@drawable/arrow_next"
+                android:text="Language"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen24"
+            android:layout_marginBottom="@dimen/dimen60"
+            android:background="@drawable/solid_white_16"
+            android:elevation="@dimen/dimen8"
+            android:padding="@dimen/dimen18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvHeading4"
+                style="@style/poppins_medium_500_18sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/log_out"
+                android:drawablePadding="@dimen/dimen16"
+                android:text="@string/logout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                style="@style/poppins_12sp_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/arrow_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

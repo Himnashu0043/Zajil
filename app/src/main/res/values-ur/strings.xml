@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">زجل</string>
+    <string name="app_notification_description">زجل آپ کا مقام استعمال کر رہا ہے۔</string>
+
+    <string name="navigation_drawer_open">کھولیں۔</string>
+    <string name="navigation_drawer_close">بند کریں</string>
+    <string name="google_maps_key">AIzaSyDNMhySx9Oxt1WD_ilDXOa7fPLcsE6I-sI</string>
+<!--    <string name="google_maps_key">AIzaSyBzk1iAqappPnU_19zmEz4_9A7z8DrP8Yo</string>-->
+<!--    <string name="google_maps_key">AIzaSyA6kvD69stUp0XzFbOaM7pajrzi6MhdSyU</string>-->
+
+    <string name="hello_blank_fragment">ہیلو خالی ٹکڑا</string>
+    <string name="you_are_offline">آپ آف لائن ہیں!</string>
+    <string name="go_online_to_start_accepting_jobs">نوکریاں قبول کرنا شروع کرنے کے لیے آن لائن جائیں۔</string>
+
+    <!--Language Fragment-->
+    <string name="english">انگریزی</string>
+    <string name="urdu">الإنجليزية</string>
+
+    <!--SignIn Intro Fragment-->
+    <string name="sign_in">سائن ان</string>
+
+    <!--SignIn Fragment-->
+    <string name="we_will_send_you_a_one_time_password_to_this_mobile_number">ہم آپ کو اس موبائل نمبر پر ون ٹائم پاس ورڈ بھیجیں گے۔</string>
+    <string name="mobile_number">موبائل فون کانمبر</string>
+    <string name="enter_mobile_number">موبائل نمبر درج کریں۔</string>
+    <string name="password">پاس ورڈ</string>
+    <string name="enter_password">پاس ورڈ درج کریں</string>
+    <string name="forgot_password">پاسورڈ بھول گے</string>
+
+    <!--Forgot Password Fragment-->
+    <string name="enter_your_mobile_number_to_get_otp_for_reset_your_password">اپنا پاس ورڈ دوبارہ ترتیب دینے کے لیے OTP حاصل کرنے کے لیے اپنا موبائل نمبر درج کریں۔</string>
+    <string name="send_otp">OTP بھیجیں۔</string>
+
+    <!--Phone Verification Fragment-->
+    <string name="phone_verification">فون کی تصدیق</string>
+    <string name="phone_check_your_message_for_four_digit_security_code_and_enter_it_below">فون پر چار ہندسوں کے حفاظتی کوڈ کے لیے اپنا پیغام چیک کریں اور اسے نیچے درج کریں۔</string>
+    <string name="submit">جمع کرائیں</string>
+    <string name="didn_t_get_a_code_send_again">کوڈ نہیں ملا؟ دوبارہ بھیجو</string>
+
+    <!--New Password Fragment-->
+    <string name="enter_new_password">نیا پاس ورڈ درج کریں</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</string>
+    <string name="new_password">نیا پاس ورڈ</string>
+    <string name="enter_new_passwords">نیا پاس ورڈ درج کریں</string>
+    <string name="confirm_password">پاس ورڈ کی تصدیق کریں۔</string>
+    <string name="enter_confirm_password">تصدیقی پاس ورڈ درج کریں۔</string>
+    <string name="change">تبدیلی</string>
+
+    <!--Congratulations Dialog-->
+    <string name="congratulation">مبارک ہو۔</string>
+    <string name="your_password_has_been_updated_successfully">آپ کا پاس ورڈ کامیابی کے ساتھ اپ ڈیٹ ہو گیا ہے۔</string>
+    <string name="okay">ٹھیک ہے</string>
+
+    <!--Wallet Fragment-->
+    <string name="total_earning">کل کمائی</string>
+    <string name="sar_15500">ریال 15500</string>
+    <string name="available_balance">دستیاب بیلنس</string>
+    <string name="sar_1500">1500 ریال</string>
+    <string name="total_deleveries">کل ترسیل</string>
+    <string name="_120">120</string>
+    <string name="transaction_history">لین دین کی تاریخ</string>
+    <string name="withdraw">واپس لینا</string>
+    <string name="_65431346132">#65431346132</string>
+    <string name="sar_2000">SAR 2000</string>
+    <string name="_15_02_2023_06_00_pm">15/02/2023 06:00 PM</string>
+
+    <!--Notification Fragment-->
+    <string name="notifications">اطلاعات</string>
+    <string name="the_status_of_912348625489123_had_been_changed_to_shipped">کی حیثیت<b><font color="#FF000000"> #912348625489123 </font></b>بھیج دیا گیا تھا</string>
+    <string name="_26_02_2023">26/02/2023</string>
+    <string name="_2_min">2 منٹ</string>
+    <string name="this_order_912348625489123_will_have_qucik_delivery">یہ آرڈر<b><font color="#FF000000"> #912348625489123 </font></b>پڑے گا<b><font color="#FF000000"> فوری ترسیل </font></b></string>
+
+    <!--Drawer Layout-->
+    <string name="zeeshan_khan">ذیشان خان</string>
+    <string name="_9665999999999">+9665999999999</string>
+    <string name="about_us">ہمارے بارے میں</string>
+    <string name="help_amp_support">مدد اور تعاون</string>
+    <string name="contact_us">ہم سے رابطہ کریں۔</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="terms_amp_conditions">شرائط و ضوابط</string>
+    <string name="settings">ترتیبات</string>
+
+    <!--About Us Fragment-->
+    <string name="about_zajil">زجل کے بارے میں</string>
+    <string name="lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.</string>
+    <string name="about_drivers">ڈرائیوروں کے بارے میں</string>
+    <string name="select_order">آرڈر منتخب کریں۔</string>
+    <string name="hjguygciu2">#hjguygciu2</string>
+    <string name="subject">مضمون</string>
+    <string name="eg_cancelled_booking">مثال کے طور پر منسوخ شدہ بکنگ</string>
+    <string name="description">تفصیل</string>
+    <string name="enter_description">تفصیل درج کریں۔</string>
+
+    <!--Contact Us Fragment-->
+    <string name="contact_information">رابطے کی معلومات</string>
+    <string name="say_something_to_start_a_live_chat">لائیو چیٹ شروع کرنے کے لیے کچھ کہیے!</string>
+    <string name="_1012_3456_789">+1012 3456 789</string>
+    <string name="email_us">ہمیں ای میل کریں</string>
+    <string name="call">کال کریں۔</string>
+    <string name="email">ای میل</string>
+    <string name="https_zajil_express_com">https://zajil-express.com/</string>
+
+    <!--Privacy Policy Fragment-->
+    <string name="privacy">رازداری</string>
+    <string name="zajil_policy">زجل پالیسی</string>
+
+    <!--Terms and Conditions Fragment-->
+    <string name="term_amp_conditions">شرائط و ضوابط</string>
+    <string name="term_1">مدت 1</string>
+    <string name="term_2">مدت 2</string>
+
+    <!--Settings Fragment-->
+    <string name="push_notifications">پش اطلاعات</string>
+    <string name="language">زبان</string>
+    <string name="change_password">پاس ورڈ تبدیل کریں</string>
+    <string name="logout">لاگ آوٹ</string>
+
+    <!--Change Password Fragment-->
+    <string name="old_password">پرانا پاسورڈ</string>
+    <string name="enter_old_password">پرانا پاس ورڈ درج کریں۔</string>
+
+    <!--Language Fragment-->
+    <string name="arabic">عربی</string>
+
+    <!--Logout Dialog-->
+    <string name="are_you_sure_want_to_logout">کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟</string>
+    <string name="yes">جی ہاں</string>
+    <string name="no">نہیں</string>
+
+    <!--Request Fragment-->
+    <string name="za014638shugjk67457s">ZA014638SHUGJK67457S</string>
+    <string name="from">منجانب:</string>
+    <string name="riyad_al_aqiq">ریاض العقیق</string>
+    <string name="_7km_away">7 کلومیٹر دور</string>
+    <string name="northern_ring_road_riyadh_saudi_arabia">ناردرن رنگ روڈ، ریاض سعودی عرب</string>
+    <string name="to">کو:</string>
+    <string name="reject">رد کرنا</string>
+    <string name="rejected">مسترد</string>
+    <string name="accept">قبول کریں۔</string>
+
+    <!--Rejected Reason Dialog-->
+    <string name="reason_for_reject">رد کرنے کی وجہ</string>
+    <string name="user_denied">صارف کی تردید</string>
+    <string name="cancel">منسوخ کریں۔</string>
+
+    <!--Toolbar Request-->
+    <string name="new_request">نئی درخواست</string>
+
+    <!--Toolbar Order-->
+    <string name="my_order">میرا حکم</string>
+
+    <!--Toolbar Home-->
+    <string name="travel_and_tours">ٹریول اینڈ ٹورز</string>
+    <string name="king_fahd_road_abha_saudi_arabia">کنگ فہد روڈ، ابھا سعودی عرب</string>
+    <string name="new_requests">نئی درخواستیں۔</string>
+
+    <!--Item Ride Status-->
+    <string name="delivered">پہنچایا</string>
+
+    <!--Item Reciever Detail-->
+    <string name="receiver">وصول کنندہ</string>
+
+    <!--Item Payment Mode-->
+    <string name="stc_pay">STC تنخواہ</string>
+
+    <!--Item Package Detail-->
+    <string name="weight">وزن</string>
+    <string name="_1_4_kg">1.4 کلوگرام</string>
+    <string name="size">سائز</string>
+    <string name="l_2_x_w_1_2_x_h_3_2">L: 2” X W 1.2” X H 3.2”</string>
+
+    <!--Item Order Status-->
+    <string name="navigate_to_branch">برانچ پر جائیں۔</string>
+    <string name="navigate_to_receiver">وصول کنندہ پر جائیں۔</string>
+    <string name="home">بيت</string>
+    <string name="request">طلب</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="wallet">محفظة</string>
+    <string name="you_are_online">آپ آن لائن ہیں۔</string>
+    <string name="you_are_ready_to_start_accepting_jobs">آپ ملازمتیں قبول کرنا شروع کرنے کے لیے تیار ہیں۔</string>
+    <string name="active">فعال</string>
+    <string name="completed">مکمل</string>
+</resources>

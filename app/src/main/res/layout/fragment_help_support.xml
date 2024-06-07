@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.HelpSupportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragments.SignInFragment">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            style="@style/poppins_semibold_600_24sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen16"
+            android:text="@string/help_amp_support" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabel"
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="-10dp"
+                android:background="@color/white"
+                android:elevation="0.1dp"
+                android:paddingHorizontal="8dp"
+                android:text="@string/select_order"
+                android:textColor="@color/textBlack" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etSelectOrder"
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selected"
+                android:completionThreshold="1"
+                android:drawableEnd="@drawable/drop_down"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:padding="@dimen/dimen10"
+                android:text="@string/hjguygciu2" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="-10dp"
+                android:background="@color/white"
+                android:elevation="0.1dp"
+                android:paddingHorizontal="8dp"
+                android:text="@string/subject"
+                android:textColor="@color/textBlack" />
+
+            <EditText
+                android:id="@+id/etSubject"
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="start|top"
+                android:hint="@string/eg_cancelled_booking"
+                android:inputType="text"
+                android:padding="@dimen/dimen10"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="-10dp"
+                android:background="@color/white"
+                android:elevation="0.1dp"
+                android:paddingHorizontal="8dp"
+                android:text="@string/description"
+                android:textColor="@color/textBlack" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                style="@style/poppins_medium_500_14sp_textBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:gravity="start|top"
+                android:hint="@string/enter_description"
+                android:inputType="text|textMultiLine"
+                android:minHeight="120dp"
+                android:padding="@dimen/dimen10"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/hint" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/dimen40"
+            android:background="@drawable/solid_primary_25"
+            android:backgroundTint="#008000"
+            android:drawableStart="@drawable/whatsapp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Whatsapp"
+            android:textAllCaps="false"
+            android:textColor="@color/white">
+
+            <TextView
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/whatsapp"
+                android:drawablePadding="@dimen/dimen8"
+                android:gravity="center"
+                android:text="Submit on Whatsapp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            style="@style/poppins_bold_700_14sp_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/dimen24"
+            android:background="@drawable/solid_primary_25"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

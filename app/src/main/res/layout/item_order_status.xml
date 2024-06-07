@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen20"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:stateListAnimator="@animator/state_click_effect"
+    app:cardCornerRadius="@dimen/dimen16">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRideId"
+                style="@style/poppins_bold_700_18sp_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/za014638shugjk67457s" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/poppins_bold_700_18sp_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"
+                android:layout_alignBaseline="@id/tvRideId"
+                android:layout_centerVertical="true"
+                android:text="@string/rejected"
+                android:textAllCaps="true"
+                android:textColor="@color/order_status_color" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen24"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/poppins_regular_400_12sp_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/from"
+                android:textColor="@color/textLightBlack" />
+
+            <TextView
+                android:id="@+id/tvRideFrom"
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen10"
+                android:textColor="@color/textBlack"
+                tools:text="@string/riyad_al_aqiq" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen10"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/dimen2" />
+
+            <TextView
+                android:id="@+id/tvRideFromDistance"
+                style="@style/poppins_medium_500_12sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen2"
+                android:textColor="@color/primary"
+                tools:text="@string/_7km_away" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRideFromAddress"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen6"
+            android:drawablePadding="@dimen/dimen4"
+            android:textColor="@color/dark_grey"
+            app:drawableStartCompat="@drawable/location_pin_primary"
+            tools:text="@string/northern_ring_road_riyadh_saudi_arabia" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen24"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/poppins_regular_400_12sp_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/to"
+                android:textColor="@color/textLightBlack" />
+
+            <TextView
+                android:id="@+id/tvRideTo"
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen10"
+                android:textColor="@color/textBlack"
+                tools:text="@string/riyad_al_aqiq" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen10"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/dimen2" />
+
+            <TextView
+                android:id="@+id/tvRideToDistance"
+                style="@style/poppins_medium_500_12sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen2"
+                android:textColor="@color/primary"
+                tools:text="@string/_7km_away" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRideToAddress"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen6"
+            android:drawablePadding="@dimen/dimen4"
+            android:textColor="@color/dark_grey"
+            app:drawableStartCompat="@drawable/location_pin_primary"
+            tools:text="@string/northern_ring_road_riyadh_saudi_arabia" />
+
+        <LinearLayout
+            android:id="@+id/llNavigateToBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNavigateToBranch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/positive_button"
+                android:text="@string/navigate_to_branch"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

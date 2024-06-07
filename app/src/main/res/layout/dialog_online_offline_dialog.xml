@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimen20"
+    android:background="@drawable/solid_white_22"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="@dimen/dimen14"
+    android:paddingHorizontal="@dimen/dimen40"
+    android:paddingVertical="@dimen/dimen30">
+
+
+    <TextView
+        android:id="@+id/tvCongratulation"
+        style="@style/poppins_bold_700_20sp_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen15"
+        android:text="You are offline"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/poppins_regular_400_14sp_dark_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:text="Go online to see new requests"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/tvCongratulation"
+        app:layout_constraintStart_toStartOf="@+id/tvCongratulation"
+        app:layout_constraintTop_toBottomOf="@id/tvCongratulation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvOkay"
+        style="@style/poppins_semibold_600_14sp_dark_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen30"
+        android:layout_marginEnd="@dimen/dimen10"
+        android:background="@drawable/stroke_grey_50"
+        android:paddingHorizontal="@dimen/dimen40"
+        android:paddingVertical="@dimen/dimen10"
+        android:text="Okay"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

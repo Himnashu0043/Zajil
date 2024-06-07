@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimen16">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen16">
+
+        <ImageView
+            android:id="@+id/ivReceiverProfile"
+            android:layout_width="@dimen/dimen50"
+            android:layout_height="@dimen/dimen50"
+            android:background="@drawable/place_holde_profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen18"
+            android:layout_toEndOf="@id/ivReceiverProfile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReceiverName"
+                style="@style/poppins_bold_700_16sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zeeshan_khan"
+                android:textColor="@color/textBlack" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/poppins_regular_400_12sp_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen4"
+                android:drawablePadding="@dimen/dimen8"
+                android:text="@string/_9665999999999"
+                app:drawableStartCompat="@drawable/call" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/poppins_regular_400_12sp_dark_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen4"
+            android:drawablePadding="@dimen/dimen8"
+            android:text="@string/receiver" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

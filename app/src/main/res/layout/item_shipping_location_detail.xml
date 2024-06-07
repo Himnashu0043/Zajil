@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/dimen20"
+    app:cardCornerRadius="@dimen/dimen16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen20">
+
+        <TextView
+            android:id="@+id/tvRideId"
+            style="@style/poppins_bold_700_18sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/za014638shugjk67457s" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen24"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/poppins_regular_400_12sp_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/from"
+                android:textColor="@color/textLightBlack" />
+
+            <TextView
+                android:id="@+id/tvRideFrom"
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen10"
+                tools:text="@string/riyad_al_aqiq"
+                android:textColor="@color/textBlack" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen10"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/dimen2" />
+
+            <TextView
+                android:id="@+id/tvRideFromDistance"
+                style="@style/poppins_medium_500_12sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen10"
+                tools:text="@string/_7km_away"
+                android:textColor="@color/primary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRideFromAddress"
+            style="@style/poppins_medium_500_12sp_textBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen6"
+            android:drawablePadding="@dimen/dimen4"
+            android:text="@string/northern_ring_road_riyadh_saudi_arabia"
+            android:textColor="@color/dark_grey"
+            app:drawableStartCompat="@drawable/location_pin_primary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen24"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/poppins_regular_400_12sp_dark_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/to"
+                android:textColor="@color/textLightBlack" />
+
+            <TextView
+                android:id="@+id/tvRideTo"
+                style="@style/poppins_bold_700_14sp_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen10"
+                tools:text="@string/riyad_al_aqiq"
+                android:textColor="@color/textBlack" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen10"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/dimen2" />
+
+            <TextView
+                android:id="@+id/tvRideToDistance"
+                style="@style/poppins_medium_500_12sp_textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen10"
+                tools:text="@string/_7km_away"
+                android:textColor="@color/primary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRideToAddress"
+            style="@style/sans_12sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen6"
+            android:layout_marginTop="@dimen/dimen6"
+            android:drawablePadding="@dimen/dimen4"
+            tools:text="@string/northern_ring_road_riyadh_saudi_arabia"
+            android:textColor="@color/dark_grey"
+            app:drawableStartCompat="@drawable/location_pin_primary" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

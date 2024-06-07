@@ -1,0 +1,192 @@
+<resources>
+
+    <string name="app_name">Zajil Rider</string>
+    <string name="app_notification_description">Zajel Rider is using your location</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+<!--    <string name="google_maps_key">AIzaSyBzk1iAqappPnU_19zmEz4_9A7z8DrP8Yo</string>-->
+    <string name="google_maps_key">AIzaSyDNMhySx9Oxt1WD_ilDXOa7fPLcsE6I-sI</string>
+<!--    <string name="google_maps_key">AIzaSyA6kvD69stUp0XzFbOaM7pajrzi6MhdSyU</string>-->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_are_offline">You are offline !</string>
+    <string name="go_online_to_start_accepting_jobs">Go online to start accepting jobs.</string>
+
+    <!--Language Fragment-->
+    <string name="english">English</string>
+    <string name="urdu">Arabic</string>
+
+    <!--SignIn Intro Fragment-->
+    <string name="sign_in">Sign In</string>
+
+    <!--SignIn Fragment-->
+    <string name="we_will_send_you_a_one_time_password_to_this_mobile_number">We will send you a one-time password to this mobile number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <!--Forgot Password Fragment-->
+    <string name="enter_your_mobile_number_to_get_otp_for_reset_your_password">Enter your mobile number to get OTP for reset your password</string>
+    <string name="send_otp">Send OTP</string>
+
+    <!--Phone Verification Fragment-->
+    <string name="phone_verification">Phone Verification</string>
+    <string name="phone_check_your_message_for_four_digit_security_code_and_enter_it_below">Phone check your message for six-digit security code and enter it below</string>
+    <string name="submit">Submit</string>
+    <string name="didn_t_get_a_code_send_again">Didn’t get a code? Send again</string>
+
+    <!--New Password Fragment-->
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_passwords">Enter new password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="change">Change</string>
+
+    <!--Congratulations Dialog-->
+    <string name="congratulation">Congratulation</string>
+    <string name="your_password_has_been_updated_successfully">Your password has been updated successfully</string>
+    <string name="okay">Okay</string>
+
+    <!--Wallet Fragment-->
+    <string name="total_earning">Total Earning</string>
+    <string name="sar_15500">SAR 15500</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="sar_1500">SAR 1500</string>
+    <string name="total_deleveries">Total Deleveries</string>
+    <string name="_120">120</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="_65431346132">#65431346132</string>
+    <string name="sar_2000">SAR 2000</string>
+    <string name="_15_02_2023_06_00_pm">15/02/2023 06:00 PM</string>
+
+    <!--Notification Fragment-->
+    <string name="notifications">Notifications</string>
+    <string name="the_status_of_912348625489123_had_been_changed_to_shipped">The status of<b><font color="#FF000000"> #912348625489123 </font></b>had been changed to shipped</string>
+    <string name="_26_02_2023">26/02/2023</string>
+    <string name="_2_min">2 Min</string>
+    <string name="this_order_912348625489123_will_have_qucik_delivery">This Order<b><font color="#FF000000"> #912348625489123 </font></b>will have<b><font color="#FF000000"> Quick Delivery </font></b></string>
+
+    <!--Drawer Layout-->
+    <string name="zeeshan_khan">Zeeshan khan</string>
+    <string name="_9665999999999">+9665999999999</string>
+    <string name="about_us">About Us</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="settings">Settings</string>
+
+    <!--About Us Fragment-->
+    <string name="about_zajil">About Zajil</string>
+    <string name="lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.</string>
+    <string name="about_drivers">About Drivers</string>
+    <string name="select_order">Select Order</string>
+    <string name="hjguygciu2">#hjguygciu2</string>
+    <string name="subject">Subject</string>
+    <string name="eg_cancelled_booking">Eg- Cancelled Booking</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description</string>
+
+    <!--Contact Us Fragment-->
+    <string name="contact_information">Contact Information</string>
+    <string name="say_something_to_start_a_live_chat">Say something to start a live chat!</string>
+    <string name="_1012_3456_789">+1012 3456 789</string>
+    <string name="email_us">Email Us</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="https_zajil_express_com">https://zajil-express.com/</string>
+
+    <!--Privacy Policy Fragment-->
+    <string name="privacy">Privacy</string>
+    <string name="zajil_policy">Zajil Policy</string>
+
+    <!--Terms and Conditions Fragment-->
+    <string name="term_amp_conditions"><![CDATA[Term & Conditions]]></string>
+    <string name="term_1">Term 1</string>
+    <string name="term_2">Term 2</string>
+
+    <!--Settings Fragment-->
+    <string name="push_notifications">Push Notifications</string>
+    <string name="language">Language</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+
+    <!--Change Password Fragment-->
+    <string name="old_password">Old Password</string>
+    <string name="enter_old_password">Enter old password</string>
+
+    <!--Language Fragment-->
+    <string name="arabic">Arabic</string>
+
+    <!--Logout Dialog-->
+    <string name="are_you_sure_want_to_logout">Are you sure want to logout ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--Request Fragment-->
+    <string name="za014638shugjk67457s">ZA014638SHUGJK67457S</string>
+    <string name="from">From:</string>
+    <string name="riyad_al_aqiq">Riyad Al Aqiq</string>
+    <string name="_7km_away">7km away</string>
+    <string name="northern_ring_road_riyadh_saudi_arabia">Northern Ring Road, Riyadh Saudi Arabia</string>
+    <string name="to">To:</string>
+    <string name="reject">Reject</string>
+    <string name="rejected">Rejected</string>
+    <string name="accept">Accept</string>
+
+    <!--Rejected Reason Dialog-->
+    <string name="reason_for_reject">Reason for Reject</string>
+    <string name="user_denied">User Denied</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Toolbar Request-->
+    <string name="new_request">New Request</string>
+
+    <!--Toolbar Order-->
+    <string name="my_order">My Order</string>
+
+    <!--Toolbar Home-->
+    <string name="travel_and_tours">Travel and Tours</string>
+    <string name="king_fahd_road_abha_saudi_arabia">King Fahd Road, Abha Saudi Arabia</string>
+    <string name="new_requests">New Requests</string>
+
+    <!--Item Ride Status-->
+    <string name="delivered">Delivered</string>
+
+    <!--Item Reciever Detail-->
+    <string name="receiver">Receiver</string>
+
+    <!--Item Payment Mode-->
+    <string name="stc_pay">STC pay</string>
+
+    <!--Item Package Detail-->
+    <string name="weight">Weight</string>
+    <string name="_1_4_kg">1.4 Kg</string>
+    <string name="size">Size</string>
+    <string name="l_2_x_w_1_2_x_h_3_2">L: 2” X W 1.2” X H 3.2”</string>
+
+    <!--Item Order Status-->
+    <string name="navigate_to_branch">Navigate to Branch</string>
+    <string name="navigate_to_receiver">Navigate To Receiver</string>
+    <string name="home">Home</string>
+    <string name="request">Request</string>
+    <string name="my_orders">My Orders</string>
+    <string name="wallet">Wallet</string>
+    <string name="you_are_online">You are online</string>
+    <string name="you_are_ready_to_start_accepting_jobs">You are ready to start accepting jobs.</string>
+    <string name="active">Active</string>
+    <string name="completed">Completed</string>
+    
+    <!-- Validation Strings -->
+    <string name="please_enter_old_password">Please enter old password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="password_doesnt_match">Password doesn\'t match</string>
+
+</resources>
